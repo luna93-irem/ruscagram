@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RusçaGram — A1'den C2'ye Sonsuz Pratik</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="flag"><span></span><span></span><span></span></div>
+      <div class="brand">
+        <h1>RusçaGram</h1>
+        <small>Sonsuz pratik · A1'den C2'ye · Türkçe açıklamalı</small>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- SEVİYE ÇUBUĞU — JS doldurur -->
+    <nav class="levels" id="levels" aria-label="Seviye seçimi"></nav>
+
+    <!-- İLERLEME PANELİ -->
+    <section class="hud" aria-label="İlerleme">
+      <div class="mastery">
+        <div class="m-row">
+          <span id="m-label">A1 ustalığı</span>
+          <span id="m-text">0 / 10</span>
+        </div>
+        <div class="m-bar"><div id="m-fill" style="width:0%"></div></div>
+      </div>
+      <div class="badges">
+        <span class="badge ok">✓ <b id="st-ok">0</b></span>
+        <span class="badge no">✗ <b id="st-no">0</b></span>
+        <span class="badge st">🔥 <b id="st-st">0</b></span>
+      </div>
+    </section>
+
+    <!-- SORU KARTI -->
+    <section class="card" id="q-card">
+      <div class="qmeta" id="q-meta"></div>
+      <div class="qprompt" id="q-prompt">Yükleniyor…</div>
+      <div class="qword" id="q-word">—</div>
+      <div class="qhint" id="q-hint"></div>
+      <div id="q-body"></div>
+      <div class="fb" id="fb"></div>
+    </section>
+
+    <!-- REFERANS -->
+    <button class="ref-toggle" id="ref-toggle" type="button" aria-expanded="false">
+      <span>📖 Gramer Referansı (tıkla aç)</span>
+      <span class="arrow" aria-hidden="true">▶</span>
+    </button>
+    <section class="ref-body" id="ref-body">
+      <div class="card">
+        <div class="ref-tabs" id="ref-tabs"></div>
+        <div id="ref-content"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">RusçaGram · Yerel çalışma aracı</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
